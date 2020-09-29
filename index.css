@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+body{
+    background-color: transparent;
+    margin: 0;
+}
+/*style container for center*/
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;/*responsive*/
+    background-color: rgb(40, 177, 196);
+    justify-content: space-around;   
+}
+
+.flex-item{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    border: 5px solid ;
+}
+/*header and footer styles*/
+header, footer{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    background-color: rgb(29, 133, 151);
+    color: white;
+    border: 5px solid;
+}   
+
+header{
+    padding: 2rem 1rem;
+}
+
+footer{
+    padding: 1rem 1rem;
+}
+/*flexbox order*/
+.inbox{
+    order: 1;
+    flex: 1;
+    padding: 10rem 2.7rem;
+    
+}
+.messagel{
+    order: 2;
+    flex: 2;
+    padding: 10rem 0.3rem;
+}
+.message{
+    order: 3;
+    flex: 1;
+    padding: 10rem 18rem;
+}
